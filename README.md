@@ -46,7 +46,7 @@ A página inicial, adaptada para desktop e celular, com layout responsivo pensad
 ### Profile
 O perfil do usuário ainda está em organização; esta é a **ideia piloto** para mostrar informações relevantes e fáceis de acessar.  
 
-![Profile](https://github.com/Henriqueesz/bjj-twh/blob/main/profile.png?raw=true)  
+![Profile](https://github.com/Henriqueesz/bjj-twh/blob/main/Register.png?raw=true)  
 
 ### Register
 A página de cadastro possui **backgrounds diferentes para desktop e celular**, aproveitando a responsividade para melhorar a experiência do usuário.  
