@@ -377,8 +377,7 @@ main {
 
 
 /* Celulares */
-@media (max-width: 600px) {
-  .container {
+@media (max-width: 600px) { .container {
     flex-direction: column;
   }
 
@@ -397,13 +396,23 @@ main {
   .nav-you p {
     font-size: 16px;
   }
+  .nav-history, .nav-playlist{
+    display: none;
+  }
 
   main {
     padding: 10px;
   }
 
   .search-bar {
-    max-width: 100%;
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 120px;
+    
+  }
+  .banner{
+    display: none;
+
   }
 
   /* Cards menores para caber na tela */
@@ -420,3 +429,5 @@ main {
     padding: 8px 12px;
     font-size: 14px;
   }
+  
+ 
