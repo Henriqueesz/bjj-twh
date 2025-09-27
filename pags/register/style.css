@@ -1,5 +1,4 @@
-/* PAG REGISTER */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,24 +12,19 @@ body {
 }
 body {
   height: 100vh;
-  background: url("./pexels-cottonbro-7988953.jpg");
+  background: url("./assents/pexels-cottonbro-7988953.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
 }
-
 .container {
   position: absolute;
   top: 50%;
-  left: 50%; /* mais à direita */
-  transform: translate(
-    -50%,
-    -30%
-  ); /* centraliza o container com base no ponto */
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.4); /* opcional: melhora a leitura */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* 🔹 Alterado: antes era fixo 400px */
+  max-width: 400px; /* 🔹 Limita no desktop */
+  background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   color: #b7beb6;
@@ -106,14 +100,14 @@ form {
   font-size: 16px;
   color: #333;
   font-weight: 600;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.login houver {
+.login:hover {
   background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 .login {
-  margin: 10px 0 20px; /* espaçamento entre botão e outros elementos */
+  margin: 10px 0 20px;
 }
 
 .register-link {
@@ -121,12 +115,32 @@ form {
   font-size: 14px;
   color: #fff;
 }
-
 .register-link a {
   color: #cdd5f1;
   text-decoration: none;
 }
-
 .register-link a:hover {
   text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+  .container {
+    width: 95%; /* 🔹 Corrigido: antes era .comtainer (erro de digitação) */
+    padding: 15px;
+    position: absolute;
+    bottom: 390px;
+  }
+  .container h1 {
+    font-size: 28px; /* 🔹 Reduzi título */
+  }
+  .container h2 {
+    font-size: 20px;
+  }
+  body {
+    background: url("./assents/photo-1676220672943-5100a727ba36.jpeg");
+    background-size: cover; /* cobre toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete */
+  }
 }
